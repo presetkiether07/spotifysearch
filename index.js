@@ -49,7 +49,7 @@ app.get("/api/spotify", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.status(200).send("🟢 LLaMA API is running.");
+  res.status(200).send("🟢 Spotify Search API is running.");
 });
 
 
