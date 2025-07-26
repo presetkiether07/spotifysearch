@@ -49,4 +49,9 @@ app.get("/api/spotify", async (req, res) => {
 });
 
 const PORT = process.env.PORT || 8080;
+
+app.get("/", (req, res) => {
+  res.status(200).send("🟢 LLaMA API is running.");
+});
+
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
